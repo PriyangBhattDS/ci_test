@@ -15,9 +15,9 @@ from mlflow.models import infer_signature
 
 # Initialize DagsHub for experiment tracking
 import dagshub
-dagshub.init(repo_owner='bhattpriyang', repo_name='mini-project1', mlflow=True)
+dagshub.init(repo_owner='bhattpriyang', repo_name='ci_test', mlflow=True)
 mlflow.set_experiment("Final_model")
-mlflow.set_registry_uri("https://dagshub.com/bhattpriyang/mini-project1.mlflow")
+mlflow.set_tracking_uri("https://dagshub.com/bhattpriyang/ci_test.mlflow")
 
 
 mlflow.set_experiment("water-potability-prediction")

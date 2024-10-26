@@ -3,9 +3,9 @@ from mlflow.tracking import MlflowClient
 import mlflow
 
 import dagshub
-dagshub.init(repo_owner='bhattpriyang', repo_name='mini-project1', mlflow=True)
+dagshub.init(repo_owner='bhattpriyang', repo_name='ci_test', mlflow=True)
 mlflow.set_experiment("Final_model")
-mlflow.set_registry_uri("https://dagshub.com/bhattpriyang/mini-project1.mlflow")
+mlflow.set_tracking_uri("https://dagshub.com/bhattpriyang/ci_test.mlflow")
 
 
 # Load the run ID and model name from the saved JSON file
